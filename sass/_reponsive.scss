@@ -20,7 +20,21 @@
 	.content-blog-top .container .list-comment .row .col-md-3 .arrow_box p {
 		margin: 50px 0;
 	}
-	
+	.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 8px;
+	}
+	.navbar-collapse {
+    	padding-left: 0;
+	}
+	.header-menu .container .menu-logo {
+		float:none;
+	    text-align: center;
+	}
+	.content-touch .container .touch-list p {
+		margin: 0 0 50px 0;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,6 +170,9 @@
 	}
 	#main-inostop .container .all-portfolios .all-portfolios {
 		margin-left: 25px;
+	}
+	.ul.filter li {
+		margin: 10px 0;
 	}
 
 }

@@ -1,5 +1,5 @@
 .portfolio-filter {}
-ul.filter {color: white; text-transform:none}
+ul.filter {color: white; text-transform:none; padding: 0; }
 ul.filter li{display: inline-block;padding-right: 25px;padding-left: 25px;position: relative;cursor: pointer; font-size: 14px;}
 ul.filter li.active{color: white;}
 ul.filter li:last-child{}
@@ -9,12 +9,13 @@ ul.filter li {
     border-radius: 20px;
     padding: 10px 30px;
     margin: 10px;
+    box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 4px 0px 0px rgb(204, 117, 31);
 }
-.all-portfolios {margin-top: -20px;margin-left: -10px}
+}
+.all-portfolios {margin-top: -20px;margin-left: 15px}
 .single-portfolio {float: left;
-margin-bottom: 10px;
-margin-left: 10px;
-width: 370px;}
+
+width: 277px;}
 .image {
   opacity: 1;
   display: block;
@@ -27,7 +28,7 @@ width: 370px;}
 .portfolio-filter {
     padding: 30px;
 }
-.images-main img {
+#main-inostop .container .all-portfolios .single-portfolio .images-main img {
     opacity: 1;
     display: block;
     height: auto;
@@ -35,12 +36,7 @@ width: 370px;}
     backface-visibility: hidden;
     width: 100%;
   }
-  .images-main {
-    position: relative;
-    width: 100%;
-    margin: 10px 0;
-  } 
-.images-main .middle {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -51,12 +47,12 @@ width: 370px;}
   top: 0;
 }
 
-.images-main .middle .text {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text {
     text-align: center;
     padding: 45px 0 0 0;
     line-height: 100%;
 }
-.images-main .middle .text h3 {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text h3 {
   background-color: transparent;
   font-size: 18px;
   color: white;
@@ -64,7 +60,7 @@ width: 370px;}
   font-family: Oswald;
   cursor: pointer;
 }
-.images-main .middle .text p {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text p {
   background-color: transparent;
   font-size: 14px;
   color: white;
@@ -72,17 +68,17 @@ width: 370px;}
   font-family: lato;
   cursor: pointer;
 }
-.images-main .middle .text hr {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text hr {
   width: 70px;
   border-color: white;
   margin: 0 100px 10px 100px;
 }
 
-.images-main .middle:hover {
+#main-inostop .container .all-portfolios .single-portfolio .images-main .middle:hover {
   opacity: 1;  
 }
 
-.images-main img:hover {
+#main-inostop .container .all-portfolios .single-portfolio .images-main img:hover {
   opacity: 0.3;  
 }
 .sticky {
@@ -159,40 +155,9 @@ width: 370px;}
   text-align: center;
   margin: 30px 0 00px 0;
 }
-@media only screen and (max-width: 1024px) {
-  #main-inostop .container .all-portfolios {
-    margin-top: -20px;
-    margin-left: 0; 
-  }
-}
-@media only screen and (max-width: 768px) {
-  .single-portfolio {
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 277px;
-  }
-  .content-top-list .container:before {
-    width: 0;
-  }
-  #main-inostop .container .all-portfolios {
-    margin-top: -20px;
-    margin-left: 70px;
-  }
-}
-@media only screen and (max-width: 375px) {
-  #main-inostop .container .all-portfolios {
-    margin-top: -20px;
-    margin-left: -20px; 
-  }
-}
-.content-top-list .container:after {
-  width: 35%;
-  right: 30px;
-}
-.content-top-list .container:before {
-  width: 37%;
-}
-.content-top-list {
-    padding: 70px 0 20px 0;
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }

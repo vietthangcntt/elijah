@@ -1,5 +1,5 @@
 .portfolio-filter {}
-ul.filter {color: white; text-transform:none; padding: 0; }
+ul.filter {color: white; text-transform:none; padding: 0 0 20px 0; }
 ul.filter li{display: inline-block;padding-right: 25px;padding-left: 25px;position: relative;cursor: pointer; font-size: 14px;}
 ul.filter li.active{color: white;}
 ul.filter li:last-child{}
@@ -7,13 +7,16 @@ ul.filter li:last-child:after{display: none}
 ul.filter li {
     background: #f89a3d;
     border-radius: 20px;
-    padding: 10px 30px;
-    margin: 10px;
+    padding: 10px 35px;
+    margin-right: 20px;
+    box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 5px 0px 0px rgb(204, 117, 31);
+    padding-top: 10px;
 }
-.all-portfolios {margin-top: -20px;margin-left: 15px}
+.all-portfolios {margin-top: -20px;margin-left: -10px}
 .single-portfolio {float: left;
-
-width: 277px;}
+margin-bottom: 10px;
+margin-left: 10px;
+width: 370px;}
 .image {
   opacity: 1;
   display: block;
@@ -47,7 +50,10 @@ width: 277px;}
 
 #main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text {
     text-align: center;
-    padding: 45px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     line-height: 100%;
 }
 #main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text h3 {
@@ -147,9 +153,47 @@ width: 277px;}
   background: #f89a3d;
   border: none;
   border-radius: 20px;
-  padding: 5px 25px;
+  padding: 7px 29px;
+  margin-bottom: 50px;
+  box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 5px 0px 0px rgb(248, 154, 61);
 }
 .content-car {
   text-align: center;
-  margin: 30px 0 00px 0;
+  margin: 30px 0 70px 0;
+}
+@media only screen and (max-width: 1024px) {
+  #main-inostop .container .all-portfolios {
+    margin-top: -20px;
+    margin-left: 0; 
+  }
+}
+@media only screen and (max-width: 768px) {
+  .single-portfolio {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 277px;
+  }
+  #main-inostop .container .all-portfolios {
+    margin-top: -20px;
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #main-inostop .container .all-portfolios {
+    margin-top: -20px;
+    margin-left: 45px; 
+  }
+}
+@media only screen and (max-width: 375px) {
+  #main-inostop .container .all-portfolios {
+    margin-top: -20px;
+    margin-left: 35px; 
+  }
+}
+@media only screen and (max-width: 320px) {
+  #main-inostop .container .all-portfolios {
+    margin-top: -20px;
+    margin-left: 0px; 
+  }
 }
