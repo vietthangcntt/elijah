@@ -1,0 +1,86 @@
+#header {
+	text-align: center;
+	background-image: url(../images/header.png);
+	.header-logo {
+	    padding-top: 115px;
+	}
+	.header-list {
+		padding-top: 70px;
+		h2 {
+			font-family: $fontlato;
+			color: $colorwhite;
+			padding: 0px 250px;
+			span {
+				background: $colororange;
+			}
+		}
+	}
+	.header-down {
+		padding-top: 90px;
+	    padding-bottom: 50px;
+
+	}
+}
+
+.header-menu {
+	padding-top: 20px;
+    border-bottom: 5px double #e7e7e7;
+	.container {
+		.menu-logo {
+			float: left;
+		}
+		.collapse {
+			ul {
+				list-style: none;
+				padding-left: 190px;
+				li {
+					a {
+						font-family: $fontOswald;
+						font-size: 18px;
+						i {
+							color: $colorblack;
+							margin-left: 8px;	
+						}
+					&:hover {
+						color:$colororange;
+						text-decoration:none;
+						padding-bottom: 15px;
+						border-bottom: 2px solid $colororange;
+						background:transparent;
+					}	
+					}
+				}
+			}
+
+		}
+		.menu-search {
+			line-height: 40px;
+			float: right;
+			button {
+				margin: 7px;
+				background: transparent;
+				border: none;
+			}
+		}
+	}
+}
+.navbar-inverse .navbar-nav>.active>a {
+    color: $colororange;
+    text-decoration: none;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $colororange;
+    background: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: $colorblack;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: black;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: $colororange;
+}
+#navbar .navbar {
+	background: white; 
+	border-color: white;
+}
