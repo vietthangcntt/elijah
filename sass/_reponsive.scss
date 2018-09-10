@@ -145,6 +145,20 @@
 	.header-menu .container .collapse ul {
 		padding-left: 40px;
 	}
+	.content-blog-top .container .list-comment .row .col-md-3 .arrow_box:after {
+    top: 100%;
+    left: 25%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #ffffff;
+    border-width: 30px;
+    margin-left: -72px;
+	}
 }
 @media only screen and (max-width: 375px)  {
 	.sticky {
@@ -190,6 +204,20 @@
 	.ul.filter li {
 		margin: 10px 0;
 	}
+	.content-blog-top .container .list-comment .row .col-md-3 .arrow_box:after {
+    top: 100%;
+    left: 25%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #ffffff;
+    border-width: 30px;
+    margin-left: -70px;
+ 	}
 
 }
 @media only screen and (max-width: 360px) {

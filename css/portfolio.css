@@ -178,6 +178,9 @@ width: 370px;}
     margin-top: -20px;
     margin-left: 70px;
   }
+  ul.filter li {
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width: 414px) {
   #main-inostop .container .all-portfolios {

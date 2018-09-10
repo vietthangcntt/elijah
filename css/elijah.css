@@ -156,8 +156,7 @@ width: 277px;}
   margin: 30px 0 00px 0;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    height: 100%;
-    width: 100%;
     background-size: cover;
     background-position: center;
+    height: 100%;
 }
