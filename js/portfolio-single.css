@@ -1,5 +1,5 @@
 .portfolio-filter {}
-ul.filter {color: white; text-transform:none; padding: 0 0 20px 0; }
+ul.filter {color: white; text-transform:none}
 ul.filter li{display: inline-block;padding-right: 25px;padding-left: 25px;position: relative;cursor: pointer; font-size: 14px;}
 ul.filter li.active{color: white;}
 ul.filter li:last-child{}
@@ -7,10 +7,10 @@ ul.filter li:last-child:after{display: none}
 ul.filter li {
     background: #f89a3d;
     border-radius: 20px;
-    padding: 10px 35px;
-    margin-right: 20px;
-    box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 5px 0px 0px rgb(204, 117, 31);
-    padding-top: 10px;
+    padding: 10px 30px;
+    margin: 10px;
+    box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 4px 0px 0px rgb(204, 117, 31);
+}
 }
 .all-portfolios {margin-top: -20px;margin-left: -10px}
 .single-portfolio {float: left;
@@ -29,7 +29,7 @@ width: 370px;}
 .portfolio-filter {
     padding: 30px;
 }
-#main-inostop .container .all-portfolios .single-portfolio .images-main img {
+.images-main img {
     opacity: 1;
     display: block;
     height: auto;
@@ -37,7 +37,12 @@ width: 370px;}
     backface-visibility: hidden;
     width: 100%;
   }
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle {
+  .images-main {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+  } 
+.images-main .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -48,15 +53,12 @@ width: 370px;}
   top: 0;
 }
 
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text {
+.images-main .middle .text {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 45px 0 0 0;
     line-height: 100%;
 }
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text h3 {
+.images-main .middle .text h3 {
   background-color: transparent;
   font-size: 18px;
   color: white;
@@ -64,7 +66,7 @@ width: 370px;}
   font-family: Oswald;
   cursor: pointer;
 }
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text p {
+.images-main .middle .text p {
   background-color: transparent;
   font-size: 14px;
   color: white;
@@ -72,17 +74,17 @@ width: 370px;}
   font-family: lato;
   cursor: pointer;
 }
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle .text hr {
+.images-main .middle .text hr {
   width: 70px;
   border-color: white;
   margin: 0 100px 10px 100px;
 }
 
-#main-inostop .container .all-portfolios .single-portfolio .images-main .middle:hover {
+.images-main .middle:hover {
   opacity: 1;  
 }
 
-#main-inostop .container .all-portfolios .single-portfolio .images-main img:hover {
+.images-main img:hover {
   opacity: 0.3;  
 }
 .sticky {
@@ -153,13 +155,11 @@ width: 370px;}
   background: #f89a3d;
   border: none;
   border-radius: 20px;
-  padding: 7px 29px;
-  margin-bottom: 50px;
-  box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 5px 0px 0px rgb(248, 154, 61);
+  padding: 5px 25px;
 }
 .content-car {
   text-align: center;
-  margin: 30px 0 70px 0;
+  margin: 30px 0 00px 0;
 }
 @media only screen and (max-width: 1024px) {
   #main-inostop .container .all-portfolios {
@@ -174,29 +174,27 @@ width: 370px;}
     margin-left: 10px;
     width: 277px;
   }
+  .content-top-list .container:before {
+    width: 0;
+  }
   #main-inostop .container .all-portfolios {
     margin-top: -20px;
     margin-left: 70px;
   }
 }
-@media only screen and (max-width: 414px) {
-  #main-inostop .container .all-portfolios {
-    margin-top: -20px;
-    margin-left: 45px; 
-  }
-  #main-inostop .container .portfolio-filter ul li {
-    margin: 10px 0;
-  }
-}
 @media only screen and (max-width: 375px) {
   #main-inostop .container .all-portfolios {
     margin-top: -20px;
-    margin-left: 25px; 
+    margin-left: -20px; 
   }
 }
-@media only screen and (max-width: 320px) {
-  #main-inostop .container .all-portfolios {
-    margin-top: -20px;
-    margin-left: 0px; 
-  }
+.content-top-list .container:after {
+  width: 35%;
+  right: 30px;
+}
+.content-top-list .container:before {
+  width: 37%;
+}
+.content-top-list {
+    padding: 70px 0 20px 0;
 }

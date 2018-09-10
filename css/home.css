@@ -325,6 +325,11 @@ template {
     padding-top: 90px;
     padding-bottom: 50px; }
 
+.nav {
+  padding-left: 40px;
+  margin-bottom: 0;
+  list-style: none; }
+
 .header-menu {
   padding-top: 20px;
   border-bottom: 5px double #e7e7e7; }
@@ -952,6 +957,7 @@ template {
     background-position: center;
     border: 1px solid #dddddd;
     text-align: center;
+    background-repeat: no-repeat;
     margin: -20px -30px 0 -30px; }
     .content-sale .container .row .col-md-4 .sale-2 .sale-list-2 span {
       font-size: 48px;
@@ -1324,7 +1330,7 @@ a {
     padding: 0; }
 
   .header-menu .container .collapse ul {
-    padding: 0; }
+    padding-left: 40px; }
 
   .content-sale .container .row .col-md-4 .sale-2 {
     margin: 0; }
@@ -1365,7 +1371,18 @@ a {
     margin-left: 0; }
 
   .content-list .container .row .col-md-6 .list-progress {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .header-menu .container .menu-logo {
+    float: left;
+    line-height: 45px; }
+
+  #navbar .header-menu .container .collapse .nav {
+    padding-left: 40px; }
+
+  .header-menu .container .menu-search {
+    float: none;
+    padding-left: 20px; } }
 @media only screen and (max-width: 414px) {
   .content-blog-top-down .container h3 {
     padding: 0; }
@@ -1389,13 +1406,17 @@ a {
     padding: 0; }
 
   .header-menu .container .menu-search {
-    float: none; }
+    float: none;
+    padding-left: 20px; }
 
   .content-map .container {
     padding: 100px 50px; }
 
   .content-down .content-blog-down .container .auto-picture .text-box h2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  .header-menu .container .collapse ul {
+    padding-left: 40px; } }
 @media only screen and (max-width: 375px) {
   .sticky {
     position: fixed;
@@ -1428,10 +1449,11 @@ a {
     padding: 0; }
 
   .header-menu .container .collapse ul {
-    padding: 0; }
+    padding-left: 40px; }
 
   .header-menu .container .menu-search {
-    float: none; }
+    float: none;
+    padding-left: 20px; }
 
   #main-inostop .container .all-portfolios .all-portfolios {
     margin-left: 25px; }
@@ -1444,7 +1466,7 @@ a {
     margin-left: 20px; } }
 @media only screen and (max-width: 320px) {
   .header-menu .container .collapse ul {
-    padding-left: 0; }
+    padding-left: 40px; }
 
   #main-inostop .container .all-portfolios {
     margin-top: -20px;

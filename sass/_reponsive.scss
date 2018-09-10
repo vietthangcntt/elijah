@@ -55,7 +55,7 @@
 		padding: 0;
 	}
 	.header-menu .container .collapse ul {
-		padding:0;
+		padding-left: 40px;
 	}
 	.content-sale .container .row .col-md-4 .sale-2 {
 		margin: 0;
@@ -98,6 +98,17 @@
 	.content-list .container .row .col-md-6 .list-progress {
 		margin-right: 0;
 	}
+	.header-menu .container .menu-logo {
+		float: left;
+		line-height: 45px;
+	}
+	#navbar .header-menu .container .collapse .nav {
+		padding-left: 40px;
+	}
+	.header-menu .container .menu-search {
+		float: none;
+		padding-left: 20px;
+	} 
 }
 @media only screen and (max-width: 414px) {
 	.content-blog-top-down .container h3 {
@@ -123,12 +134,16 @@
 	}
 	.header-menu .container .menu-search {
 		float: none;
+		padding-left: 20px;
 	}
 	.content-map .container {
 	    padding: 100px 50px;
 	}
 	.content-down .content-blog-down .container .auto-picture .text-box h2 {
 		font-size: 50px;
+	}
+	.header-menu .container .collapse ul {
+		padding-left: 40px;
 	}
 }
 @media only screen and (max-width: 375px)  {
@@ -163,10 +178,11 @@
 		padding: 0;
 	}
 	.header-menu .container .collapse ul {
-		padding: 0;
+		padding-left: 40px;
 	}
 	.header-menu .container .menu-search {
 		float: none;
+		padding-left: 20px;
 	}
 	#main-inostop .container .all-portfolios .all-portfolios {
 		margin-left: 25px;
@@ -184,7 +200,7 @@
 }
 @media only screen and (max-width: 320px) {
 	.header-menu .container .collapse ul {
-	 padding-left: 0;
+		padding-left: 40px;
 	}
 	#main-inostop .container .all-portfolios {
     margin-top: -20px;

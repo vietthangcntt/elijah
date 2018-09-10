@@ -10,7 +10,6 @@ ul.filter li {
     padding: 10px 35px;
     margin-right: 20px;
     box-shadow: -2px 6px 16px 0 rgba(47, 42, 38, 0.1), 0px 5px 0px 0px rgb(204, 117, 31);
-    padding-top: 10px;
 }
 .all-portfolios {margin-top: -20px;margin-left: -10px}
 .single-portfolio {float: left;
@@ -184,14 +183,11 @@ width: 370px;}
     margin-top: -20px;
     margin-left: 45px; 
   }
-  #main-inostop .container .portfolio-filter ul li {
-    margin: 10px 0;
-  }
 }
 @media only screen and (max-width: 375px) {
   #main-inostop .container .all-portfolios {
     margin-top: -20px;
-    margin-left: 25px; 
+    margin-left: 35px; 
   }
 }
 @media only screen and (max-width: 320px) {
